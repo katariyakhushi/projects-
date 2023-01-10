@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Complete website in html css and java script </title>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+	<style>
+		body{
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+header{
+	
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+nav{
+	width: 100%;
+	height: 80px;
+	background: white;
+	color: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 80px;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.logo{
+	font-family: sans-serif;
+	font-size: 2.5em;
+}
+.logo span{
+	color: red;
+}
+.menu a{
+	text-decoration: none;
+	color: black;
+	padding: 5px 5px;
+	font-family: sans-serif;
+	font-size: 20px;
+ 	padding-left: 80px;
+}
+.menu a:first-child{
+	color: red;
+}
+.menu a:hover{
+	color: red;
+}
+.color{
+	margin-left: 100px;
+	padding-left: 50px;
+}
+.icon i{
+	 font-size: 30px;
+
+}
+.icon i:hover{
+	color: red;
+}
+.icon a{
+	text-decoration: none;
+	padding-right: 100px;
+	color: black;
+	margin-left: 30px;
+	border-radius: 5px;
+}
+.h-text{
+	color: black;
+	max-width: 500px;
+	position: absolute;
+	top: 0%;
+	left: 50px;
+	transform: translate(100%,80%);
+	text-align: center;
+	font-size: 15px;
+	text-align: center;
+	width: 100%;
+
+
+}
+#camera{
+}
+.h-text h1{
+	font-family: sans-serif;
+	font-size: 3.5em;
+	line-height: 1.5em;
+
+}
+.h-text input{
+	width: 60%;
+	padding: 20px;
+	border: none;
+	outline: none;
+	font-size: 20px;
+	border-radius: 8px;
+	background-color: black;
+
+}
+.h-text button{
+	width: 100px;
+	padding: 20px;
+	background: chocolate;
+	color: whitesmoke;
+	border: none;
+	font-size: 20px;
+	outline: none;
+	margin-top: 30px;
+	border-radius: 8px;
+}
+.filter-gallery{
+	padding: 100px;
+}
+.portfolio-menu{
+	text-align: center;
+	margin-bottom: 20px;
+	width: 100%;
+}
+.portfolio-menu ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 20px 0px;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: sans-serif;
+	padding: 10px 20px;
+	cursor: pointer;
+	transition: 0.5s ease;
+	text-align: center;
+
+}
+.portfolio-menu ul li:hover{
+	color: white;
+	background: chocolate;
+	border-radius: 8px;
+}
+li.active{
+	color: red;
+	background: chocolate;
+	border-radius: 8px;
+}
+.portfolio-item{
+	width: 120%;
+
+}
+.portfolio-item .item{
+	width: 380px;
+	height: 360px;
+	float: left;
+	margin-bottom: 30px;
+	margin-right: 100px;
+}
+.portfolio-item .item img{
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+}
+.member{
+	width: 100%;
+
+	padding: 20px 100px;
+	font-family: sans-serif;
+}
+.member-info{
+	text-align: center;
+}
+.member-info h1{
+	font-size: 2.5em;
+}
+.member-info h1 span{
+	color: #e74c3c;
+}
+.member-card{
+text-align: center;
+padding-top: 50px;
+width: 50%;
+margin: auto;
+}
+.member-card p{
+	margin: 20px 0px;
+	line-height: 2em;
+}
+.member-card h2{
+	margin: 20px 0px	;
+}
+.m-images{
+	width: 110%;
+	display: flex;
+	margin: 20px 0px;
+	overflow: hidden;
+
+}
+.m-images img{
+	
+	cursor: pointer;
+	transition: 0.4s ease-in-out;
+}
+.m-images img:hover{
+	transform: scale(1.5);
+}
+footer{
+	width: 100%;
+
+	background: #262626;
+	padding: 50px 100px;
+ 	
+
+}
+.newsletter{
+	width: 95%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	color: white;
+}
+.newsletter >div{
+	flex-basis: 50%;
+}
+.ntext{
+	text-align: right;
+}
+.newsletter h2{
+	font-size: 2em;
+	font-family: sans-serif;
+
+}
+.newsletter p{
+	font-size: 20px;
+	margin-top: 10px;
+}
+.newsletter label{
+	position: relative;
+}
+.newsletter input{
+	padding: 20px;
+	width: 70%;
+	border-radius: 8px;
+	border: none;
+	outline: none;
+	font-family: sans-serif;
+}
+.newsletter button{
+	position: absolute;
+	right: 0;
+	padding: 20px;
+	width: 30%;
+	background: #e74c3c;
+	color: white;
+	border: none;
+	outline: none;
+	border-radius: 0 8px 8px 0;
+}
+.f-contact{
+	color: white;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 3em;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.f-contact>div{
+	flex-basis: 20%;
+}
+.f-contact p{
+	line-height: 2em;
+	font-size: 20px;
+	color: grey;
+	cursor: pointer;
+}
+.f-contact p:hover{
+	color: white;
+}
+.f-contact i{
+	background: white;
+	color: black;
+	padding: 10px;
+	font-size: 16px;
+	margin: 20px 5px;
+	border-radius: 50%;
+	transition: .0.4s ease;
+}
+.f-contact i:hover{
+	background: transparent;
+	color: white;
+	border: 1px solid white;
+}
+	</style>
+</head>
+<body>
+		
+	<header> 
+ 	<nav>
+
+ 		<div class="logo">
+ 			<i>photo<span>pi</span></i>
+ 		</div>
+ 		<div class="menu">
+ 			<a href="#">Home</a>
+ 			<a href="#">About</a>
+ 			<a href="#">Gallery</a>
+ 			<a href="#">Contact</a>
+ 		
+ 		</div>
+ 		<div class="icon">
+ 			
+ 			<i class="fa fa-search"></i>
+ 			<a href="#">Login</a>
+ 		</div>
+ 	</nav>
+ 	<section class="h-text">
+ 		<i class="fa fa-camera" id="camera"></i>
+ 		<h1 data-aos="fade-up">Capturing the moment that captivate your heart</h1>
+ 		<input type="" name="" placeholder="search here..............">
+ 		<button><i class="fa fa-search">Search</i></button>
+ 	</section>
+ 	<img src="C:\Users\arpan katariya\OneDrive\Desktop\img\istockphoto-1251629816-170667a.jpg" height="100%" width="100%">
+ 
+	</header>
+	<section class="filter-gallery">
+		<div class="portfolio-menu">
+			<ul>
+				<li class="active">All</li>
+				<li data-filter=".nature">Nature</li>
+				<li data-filter=".faishon">Faishon</li>
+				<li data-filter=".wedding">Wedding</li>
+			</ul>
+		</div>
+	</section>
+	<section>
+		<div class="portfolio-item">
+			<div class="item nature" data-aos="fade-left" data-aos-offset="100" data-aos-delay="100">
+				<img src="img/m5.jpg" height="100%" width="100%" >
+			</div>
+			<div class="item nature" data-aos="fade-left" data-aos-offset="100" data-aos-delay="200">
+				<img src="img/f1.jpg" height="100" width="100">
+			</div>
+			<div class="item nature" data-aos="fade-left" data-aos-offset="100" data-aos-delay="300">
+				<img src="img/w1.jpg" height="100" width="100">
+			</div>
+			<div class="item nature" data-aos="fade-left" data-aos-offset="100" data-aos-delay="100" data-aos="Zoom-in">
+				<img src="img/m6.jpg" height="100" width="100">
+			</div>
+			<div class="item nature"  data-aos="fade-left"  data-aos-offset="200" data-aos-delay="100" data-aos="Zoom-in">
+				<img src="img/f3.jpg" height="100" width="100">
+			</div>
+			<div class="item nature"   data-aos="fade-left" data-aos-offset="300" data-aos-delay="100" data-aos="Zoom-in">
+				<img src="img/w3.jpg" height="100" width="100">
+			</div>
+
+		</div>
+	</section>
+
+
+	<section class="member" >
+		<div class="member-info" data-aos="Zoom-in-up" data-aos-offset="100" data-aos-delay="100">
+			<h1>Our <span> Informations</span></h1>
+			<p>what our member says</p>
+		</div>
+		<div class="member-card" data-aos="Zoom-in-down" data-aos-offset="100" data-aos-delay="200">
+			<img src="">
+			<p>
+				From Rajasthan,doing gym is good for healthy life.it helps our body to fit.
+			</p>
+			<h2>* Maria Sharapova</h2>
+			<img src="img/fb img.png" width="9%">
+			<img src="img/whatsaap img.jpg" width="9%">
+			<img src="img/inst img.jpg" width="9%">
+			<img src="img/twitter img.png" width="7%">
+		</div>
+	</section>
+	<section>
+		<div class="m-images" data-aos="Zoom-in" data-aos-offset="100" data-aos-delay="300">
+			<img src="img/w1.jpg" height="20%" width="20%">
+			<img src="img/w2.jpg" height="20%" width="18%">
+			<img src="img/m4.jpg" height="20%" width="21.5%">
+			<img src="img/m3.jpg" height="20%" width="24%">
+			<img src="img/m1.jpg" height="20%" width="21.5%">
+			
+
+		</div>
+	</section>
+	<footer>
+		<div class="newsletter">
+			<div data-aos="fade-up" data-aos-offset="200">
+				<h2>Subscribe our newsletter</h2>
+				<p>we are a team of non-cynics who truly care for our work</p>
+			</div>
+			<div class="ntext" data-aos="fade-up-right" data-aos-offset="200" >
+				<label>
+					<input type="text" name="" placeholder="Enter your email">
+					<button>Subscribe</button>
+				</label>
+			</div>
+		</div>
+		<div class="f-contact" data-aos="Zoom-in-up" data-aos-offset="200">
+			<div>
+				<h1>Information</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur elit lorem</p>
+				<li class="fa fa-whatsaap"></li>
+				<li class="fa fa-instagram"></li>
+				<li class="fa fa-telegram"></li>
+				<li class="fa fa-twitter"></li>
+			</div>
+			<div>
+				<h1>Useful links</h1>
+				<p>About us</p>
+				<p>Gallery</p>
+				<p>Blog posts</p>
+				<p>pricing plans</p>
+			</div>
+			
+			<div>
+				<h1>Details</h1>
+				<p>Photographers</p>
+				<p>Gallery</p>
+				<p>About</p>
+				<p>pricing plans</p>
+			</div>
+			<div>
+				<h1>Help & Support</h1>
+				<p>privacy policy</p>
+				<p>Term & conditions</p>
+				<p>Technical support</p>
+				<p>customer care</p>
+			</div>
+
+		</div>
+	</footer>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+	<script>
+		$('.portfolio-item').isotope({
+  // options
+  itemSelector: '.item',
+  layoutMode: 'fitRows'
+});
+		$('.portfolio-menu ul li').click(function() {
+		$('.portfolio-menu ul li').removeClass('active');
+		$(this).addClass('active');
+	
+		var selector=$(this).attr('data-filter');
+		$('.portfolio-item').isotope({
+			filter:selector
+		});
+		return false;
+	});
+	</script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+  AOS.init();
+</script>
+</body>
+</html>
